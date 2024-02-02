@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>S2T</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+ </head> 
+  
+<style>
+body{ position: relative; background-color:rhino; background-color:white;}
+ 
+  #home {padding-top:40px;height:900px; color: black;background-color: white;}
+  #services {padding-top:40px;height:900px;color: black; background-color: white;}
+  #vehicle {padding-top:40px;height:1000px;color: black; background-color: white;}
+  #contact {padding-top:40px;height:980px;color: black; background-color:white;}
+  #aboutus {padding-top:40px;height:800px; color: black;background-color: white;}
+ 
+ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;}
+
+h1 p {color:black; text-shadow: 2px 2px 4px  #000000;}
+ 
+ body{position: relative; } 
+
+#HOME {border-radius: 15px; background:#424949; color:white; padding: 2px;  width: 600px; height: 70px; text-align:center; text-size:100px}
+#HOME:hover {background: green; color:white; width: 1000px; height: 70px;}
+
+#SERVICES{border-radius: 15px; background:#424949; color:white; padding: 2px;  width: 600px; height: 70px; text-align:center; text-size:100px}
+#SERVICES:hover {background: green; color:white; width: 1000px; height: 70px;}
+
+#VEHICLE{border-radius: 15px; background:#424949; color:white; padding: 2px;  width: 600px; height: 70px; text-align:center; text-size:100px}
+#VEHICLE:hover {background: green; width: 1000px; color:white; height: 70px;}
+
+#CONTACT{border-radius: 15px; background:#424949; color:white; padding: 2px;  width: 600px; height: 70px; text-align:center; text-size:100px}
+#CONTACT:hover {background: green; width: 1000px; color:white; height: 70px;}
+ 
+#BOOKINGS{border-radius: 15px; background:LightGray; padding: 2px;  width: 465px; height: 50px; text-align:center; text-size:100px}
+#BOOKINGS:hover {background:#89CFEF; width: 465px; height: 50px;}
+
+.container {display: inline-block; cursor: pointer;}
+
+.bar1, .bar2, .bar3 {width: 35px; height: 5px; background-color: #333; margin: 6px 0; transition: 0.4s;}
+
+.change .bar1 {-webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px);}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {-webkit-transform: rotate(45deg) translate(-8px, -8px); transform: rotate(45deg) translate(-8px, -8px);}
+
+#hedr:hover{background:grey; color:yellow;}
+
+body {font-family: Arial; font-size: 17px;}
+
+.container {position: relative; max-width: 500px; margin: 0 auto;}
+
+.container .content {position: absolute; background: rgb(0, 0, 0);  background: rgba(0, 0, 0, 0.5); color: #f1f1f1; width: 100%; padding: 20px;}
+
+.container div { color: black; float: top;}
+
+#soc::b{font-size: 180%; color: #000000;}
+
+
+img {display: block; margin-left: auto; margin-right: auto;}
+
+
+.spot{float: right;}
+
+.test{height:50px; width:80px;}
+
+.spot {
+        background-color: #1c87c9; -webkit-border-radius: 60px; border-radius: 60px; color: red; cursor: pointer; display: inline-block; font-family: sans-serif; font-size: 20px; padding: 10px 10px; text-align: center; text-decoration: none;}
+      @keyframes glowing {
+        0% {
+          background-color: black; box-shadow: 0 0 5px #2ba805;
+           }
+        50% {
+          background-color: silver; box-shadow: 0 0 20px #49e819;
+           }
+        100% {
+          background-color: black; box-shadow: 0 0 5px #2ba805;
+             }
+      }
+      .spot {
+        animation: glowing 1400ms infinite;
+		
+      }
+
+	 
+.container-fluid {border: 2px solid white;}
+	
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+   align:"center"}
+
+.input-container {display: -ms-flexbox; display: flex; width: 100%; margin-bottom: 15px;}
+
+.icon {padding: 20px; background: black; color: white; min-width: 70px; text-align: center; }
+
+.input-field {width: 100%; padding: 10px; outline: none;}
+
+.input-field:focus { border: 2px solid black;}
+
+.btn {background-color: black; color: white; padding: 15px 20px; border: none; cursor: pointer; width: 100%; opacity: 0.9;}
+
+.btn:hover { opacity: 1;}
+
+.w3-container{float: left;}	
+	
+/*IMAGESSSSSSS*/
+body {font-family: Arial; margin: 0; float: center-right;}
+
+* {box-sizing: border-box;}
+
+img {vertical-align: middle;}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container{position: relative;}
+
+/* Hide the images by default */
+.mySlides { display: none;}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {cursor: pointer;}
+
+/* Next & previous buttons */
+.prev, .next {cursor: pointer; position: absolute; top: 40%; width: auto; padding: 16px; margin-top: -50px;  color: white; font-weight: bold; font-size: 20px; border-radius: 0 3px 3px 0; user-select: none; -webkit-user-select: none;}
+
+/* Position the "next button" to the right */
+.next {right: 0; border-radius: 3px 0 0 3px;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.8);}
+
+/* Number text (1/3 etc) */
+.numbertext {color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+
+/* Container for image text */
+.caption-container {text-align: center; background-color: #222; padding: 2px 16px; color: white;}
+
+.row:after {content: ""; display: table; clear: both;}
+
+/* Six columns side by side */
+.column {float: left; width: 16.66%;}
+
+/* Add a transparency effect for thumnbail images */
+.demo {opacity: 0.6;}
+
+.active, .demo:hover {opacity: 1;}
+
+.numbertext{display: block; margin-left: auto; margin-right: auto;}
+
+body {margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+#home{font-family: "Times New Roman", Times, serif; font-size: 130%;}
+
+#services{font-family: "Times New Roman", Times, serif; font-size: 120%;}
+
+#vehicle{font-family: "Times New Roman", Times, serif; font-size: 100%;}
+
+#contact{font-family: "Times New Roman", Times, serif; font-size: 100%;}
+
+#ttt{font-family:Times; font-style: bold; font-weight:100%; font-feature-settings: "c2sc", "smcp";}
+ 
+.content{font-family: "Times New Roman", Times, serif; font-size:100%;}
+
+#bookings{font-family: "Times New Roman", Times, serif; font-size:100%;}
+
+#aboutus{font-family: "Times New Roman"; color:red; font-size: 120%;}
+
+
+#cen
+{ 
+width:100%;height:30%;float:center;
+}
+
+.form-container .cancel {
+  background-color: red;
+  height:50px; width:80px;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  top: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+#mmm{font-family:Times; font-style: bold; font-weight:100%; font-size:100%; font-feature-settings: "c2sc", "smcp";}
+
+.container {
+    padding: 80px 120px;
+  }
+  
+  .person {
+    border: 30px solid transparent;
+    margin-bottom: 25px;
+    width: 90%;
+    height: 90%;
+    opacity: 0.9;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  
+  #abc{font-family: "Times New Roman"; font-size: "200%";}
+  
+  .carlogo {
+    border: 20px solid transparent;
+    margin-bottom: 25px;
+    width: 30%;
+    height: 30%;
+    opacity: 0.9;
+  }
+  .carlogo:hover {
+    border-color: #f1f1f1;
+	
+</style>
+
+<body>
+<br>
+<div>
+<br>
+<img src="IMAGES/a4.jpg" style="width:20%; float:left;">
+
+<div class="content" style="text-align:right;" id="myForm">
+  <form action="modalform.php"  method="post" class="form-container">
+	   <button class="open-button" onclick="openForm()"><h1>QUICK BOOK</h1></button>
+  </form>
+</div>
+<h1><p class="ob" style="text-align:center; font-family: Times New Roman; font-size:230%;"><b>SRI SWAMINATHA TRAVELS</b></p></h1>
+ <h2 style="text-align:center; font-family: Times New Roman;"><b>...WELCOME TO OUR TRAVELS...</b></h2>
+
+
+</div>
+<br>
+
+<h2 style="text-align:center; font-family: Times New Roman; color:red;"><b>CARS OF OUR SWAMINATHA TRAVELS</b></h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>	  
+    </ol>
+
+
+    <!-- Wrapper for slides -->
+	<div id="cen">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-wYOGsW_uEv_vj2cz8rcPIo0FHzcXBjd8A&usqp=CAU.jpg" alt="AMBASSTOR" style="width:90%; height:50%;float:center;">
+      </div>
+
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nRp3Aqf-55gQTvmwm9BD6dmnbt0i1n9wug&usqp=CAU.jpg" alt="ETIOS" style="width:90%;height:50%;float:center;">
+      </div>
+    
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeFToOlusN-QzaJmM6aXYnFpV9dJUTzRv2CQ&usqp=CAU.jpg" alt="INDICA" style="width:90%;height:50%;float:center;">
+      </div>
+  
+	
+	<div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszVmDnOeUEQhdvpWAeF2wd3ne8ahGwKxgeA&usqp=CAU.jpg" alt="INDIGO" style="width:90%;height:50%;float:center;">
+      </div>
+    
+	<div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYLGvK1KNFnfkCdMuN2B8or6lgQBWoOQO-ig&usqp=CAU.jpg" alt="INNOVASWFT" style="width:90%;height:50%;float:center;">
+      </div>
+    
+	<div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdRFs0FHb4eLGi8kExFwDqqr-SktyBQbtWYQ&usqp=CAU.jpg" alt="TAVERA" style="width:90%;height:50%;float:center;">
+      </div>
+	   </div>
+	    </div>
+    
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+  <br>
+  <br>
+ <div> 
+<picture width="100%"  height="50%">
+<img src="IMAGES/vehh.jpg" style="width:90%;height:50%;float:center;">
+</picture>
+<br>
+<div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="IMAGES/ambass.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="IMAGES/etios.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="IMAGES/indica.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="IMAGES/indigo.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="IMAGES/innovaswft.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="IMAGES/tavera.jpg" style="width:50%">
+  </div>
+ 
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="IMAGES/ambass.jpg" style="width:100% " onclick="currentSlide(1)" alt="AMBASSTOR-1000.00/Day">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMAGES/etios.jpg" style="width:100%" onclick="currentSlide(2)" alt="ETIOS-1000.00/Day">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMAGES/indica.jpg" style="width:100%" onclick="currentSlide(3)" alt="INDICA-1200.00/Day">
+	 
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMAGES/indigo.jpg" style="width:100%" onclick="currentSlide(4)" alt="INDIGO-1400.00/Day">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMAGES/innovaswft.jpg" style="width:100%" onclick="currentSlide(5)" alt="INNOVA SWIFT-1300.00/Day">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="IMAGES/tavera.jpg" style="width:100%" onclick="currentSlide(6)" alt="TAVERA-1000.00/Day">
+    </div>
+  </div>
+ </div>
+ 
+ <div style="text-align:center; font-size:25px;">
+ <span><a href="s2trent.php"><b>For more details: CLICK ME</b></a></span>
+ </div>
+<br>
+
+<div id="ttt">
+<marquee width="100%" direction="right" scrollamount="20" height="80px" color:"#8FBC8F">
+<h2>..*TRAIN TATKAL/ BUS TICKET BOOKING AVAILABLE*..</h2>
+</marquee>
+</div>
+
+<h2><p style="text-align:center";>Discounted Package for Marriage & Other Functions..</p></h2>
+ <div id="soc" style="text-align:center;">
+ <i class="fa fa-envelope" style="font-size:18px; color: black; bgcolor: yellow;">--<b>Email:</b> 
+ <span><a href="mailto:sriswaminathatravels@gmail.com">sriswaminathatravels@gmail.com</a></span></i>
+  <i class="fa fa-internet-explorer" style="font-size:18px; color: black;">--<b>Web:</b> 
+  <span><a href="webto:sriswaminathatravels.com">sriswaminathatravels.com</a></span></i>
+  <i class="fa fa-facebook" style="font-size:18px; color: black;">--<b>Facebook:</b> 
+  <span><a href="facebook: www.facebook.com/sriswaminathatravels"> www.facebook.com/sriswaminathatravels</a></span></i>
+  </div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	
+   <a id="hedr" class="navbar-brand" href="#"><i class="fa fa-car"></i>
+	  SWAMINATHA TRAVELS &#10548;</a>
+	 
+    </div>
+	
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+		
+		   <li><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+		  <li><a href="#services"><i class="fa fa-wrench"></i> SERVICES</a></li>
+          <li><a href="#vehicle"><i class="fa fa-car"></i> AVAILABLE CARS</a></li>
+	      <li><a href="#contact"><i class="fa fa-phone"></i> CONTACT</a></li>
+		  <li><a href="#bookings"><i class="fa fa-address-card"></i> BOOKINGS</a></li>
+		   <li><a href="#aboutus"><i class="fa fa-car"></i>ABOUT US</a></li>
+		 </ul>
+    </div>
+	</div>
+</nav>  
+ </div>
+ <br>
+ <br>
+ 
+ <center>
+<div id="home" class="container-fluid">
+<br>
+	 <p id="HOME"><i class="fa fa-home" style="font-size:50px; color: black;"></i> <b>HOME</b></p> 
+	<br><img src="IMAGES/a2.jpg" style="width:50%;height:50%;float:left;">
+<br>  
+	 <p>Welcome to the City of Kumbakonam.</p>
+    <p>The foundation of <b>SRI SWAMINATHA TRAVELS</b> is built on a philosophy of Exceptional Customer Services.
+    Each car will be throughly checked up and cleaned before every trip so that our customers get a perfect car.
+	Our travels rendered have always been in great demand, We will also arrange accommodation in around Kumbakonam & Thanjavur upon your request.
+		Our experienced drivers provide safely travel with comfort.
+	<p>Our travels have good-mannered and polite drivers. <br><b>SWAMINATHA TRAVELS</b> offers 24x7 hassle free car rental in KUMBAKONAM.</p>
+	
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3C_UPDgma2H0lZwan0wF1MGsdOycTUWCFfw&usqp=CAU.jpg" style="width:50%;height:50%;float:left;">
+	<br>
+ </div>
+ </center>
+
+<div>
+
+ 
+ 
+ <center>
+<div id="services" class="container-fluid">
+<br>
+ <p id="SERVICES"><i class="fa fa-fw fa-wrench" style="font-size:40px; color: black;"></i>SERVICES</p>
+ <br>
+<img src="IMAGES/ser.jpg" style="width:50%;height:60%;float:left;">
+<img src="IMAGES/a15.jpg" style="width:50%;height:60%;float:right;">
+<br>
+    <p style="color: black;">
+Our <b>SWAMINTHA TRAVELS</b> services is prompt, provisioned with moblie phones or else QuickBooking.</p> 
+ <p style="color: black;"> On monthly and day-to-day basis transport facilities are being provided.
+    Our services are extended to all major cities of India and rendered have always been in great demand.
+	SWAMINATHA TRAVELS has been involved in the car rental service since 2000.	We are providing excellent customer service and satisfying every customer							
+    And, car washing is just one of the most common type of car maintenance.</p>
+	<p style="color: black;">Get ready to pick your favorite car.</p>
+</div> </center>
+
+
+ <center>
+<div id="vehicle" class="container-fluid">
+ <br>
+  <p id="VEHICLE"><i class="fa fa-car" style="font-size:40px; color: black;"></i>AVAILABLE  CARS</p>
+  <br>
+<img src="IMAGES/vehh.jpg" style="width:90%;height:50%;float:center;">
+    <p> <u> <h2>OUR S2T AVAILABLE CARS: </h2> </u> </p>
+	<p style="color:blue; text-align:center;"><b>AMBASSADOR</b></p>
+	<p style="color:blue; text-align:center;"><b>ETIOS</b></p>
+	<p style="color:blue; text-align:center;"><b>INDICA</b> </p>
+	<p style="color:blue; text-align:center;"><b>INDIGO</b></p>
+	<p style="color:blue; text-align:center;"><b>INNOVA SWIFT DZIRE</b></p>
+	<p style="color:blue; text-align:center;"><b>TAVERA</b></p>
+	
+	<p style="color:red; text-align:center;">*A/C & NON A/C CARS AVAILABLE*</p>  <br> 	
+	 <div style="text-align:center; font-size:25px;">
+		<span><a href="tariff.html"><b>Check here for: CAR TARIFF DETAILS</b></a></span>
+	</div>
+</div>
+ </center>
+
+
+ <center>
+<div id="contact" class="container-fluid">
+<br>
+<p id="CONTACT"><i class="fa fa-address-card" style="font-size:42px; color: black;"></i>CONTACT</p>
+<br>
+<img src="IMAGES/cont.jpg" style="width:50%;height:38%;float:center;">
+  <br><p "text-align:center"><h3>Need any more help or want to give us a suggestion, <b>Contact us.</h3></b></p><br> 
+     
+<h4><p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><b>ADDRESS</b> 
+<p>Municipal Complex, </p>
+ <p>8,Gandhi Park,</p>
+ <P>Kumbakonam,Thanjavur.</P>
+ <p>Tamil Nadu, India.</p>
+ <p>PINCODE-612-001.</p>
+<p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+<b>Phone: </b>0435-2402091,+919243536892</p>
+<p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> 
+<b>Email:</b><span><a href="mailto:sriswaminathatravels@gmail.com">sriswaminathatravels@gmail.com</a></span></p>
+<br>
+<p style="font-style:oblique";>Lets get ready to Booking and touch with us:---</p></h4>
+</p>
+</div>
+ </center>
+
+<img src="IMAGES/a17.jpg" style="float:left;">
+<div id="mmm">
+<form action="message.php" method="post">
+<h2>
+<i class="fa fa-envelope icon"></i>
+<b><u> QUERY: </u></b> 
+<input class="input" type="name" name="name" id ="name" style="width: 30%; height: 200px;" placeholder="ENTER YOUR QUERY" required>
+<br> <br>
+<form action="message.php" method="post">
+<center>
+      <button type="submit" style="width:30% height:20%"> SEND </button>
+	  
+		<input type="reset"  value="CLEAR" name="reset">
+</center>
+</form>
+</h2>
+</form>
+</div>
+<br> 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div>
+
+<img src="IMAGES/a18.jpg" style="width:30%;height:40%;float:right;">
+<img src="IMAGES/a20.jpg" style="width:30%;height:50%;float:left;">
+<form action="booking.php" target="_blank" method="post" style="max-width:500px;margin:auto;float:center;">
+<div id="bookings" class="container-fluid">
+<p class="inset">
+<br>
+<br>
+<br>
+
+      <p id="BOOKINGS">  <i class="fa fa fa-user" style="font-size:40px;text-align:center color:black;"></i>   <b>BOOKINGS</b></p>
+
+<div class="form-group">
+      <label><h1>USER DETAILS</h1></label>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="name" id="name" name="name" placeholder="YOUR NAME " required>
+  </div>
+		
+ <div class="input-container">
+    <i class="fa fa-phone icon"></i>
+    <input class="input-field" type="number" id="number" name="number" placeholder="PHONENUMBER" required>
+  </div>
+   
+  <div class="input-container">
+  <i class="fa fa-calendar icon"></i>  
+        <input class="input-field" type="date" id="date" name="bookingdate" placeholder="DATE & DAY" required>
+   </div>
+   
+   <div class="input-container">
+    <i class="fa fa-users icon"></i>
+    <input class="input-field" type="number" id="seats" name="seats" placeholder="HOW MANY SEATS" required>
+  </div>      
+        
+	<div class="input-container">
+    <i class="fa fa-car icon"></i>	
+<select class="input-field" type="number" placeholder="Car Type" name="type" id="number" required>
+  </div>
+	<option value="">Select CAR Type</option>
+	<option value="AMBASSADOR(Non-A/c)">AMBASSADOR--(Non-A/c) </option>	<option value="ETIOS(A/c) ">ETIOS-(A/c) </option>
+	<option value="INDICA(Non A/c)">INDICA--(Non A/c)</option>	<option value="INDIGO(A/c)">INDIGO--(A/c)</option>
+	<option value="INNOVA SWIFT DZIRE(A/c) ">INNOVA SWIFT DZIRE--(A/c) </option>	<option value="TAVERA(Non A/c)">TAVERA--(Non A/c)</option>
+</select>	
+      </div>  
+	 
+  <div class="input-container">
+    <i class="fa fa-address-card icon"></i>
+    <input class="input-field" type="text" placeholder="ENTER PICKUP PLACE" id="place" name="place" required>
+  </div>
+  
+	  
+  <div class="checkbox">
+     <div><label><input type="checkbox" name="remember">Remember me</label></div>
+  </div>
+   <div class="form-group">        
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-primary ">Book</button>
+      </div>
+	  <div>
+		<input type="reset" style="text-align:right" value="clear" name="reset">
+       </div>
+    </div>
+	</p>
+</div>
+</form>
+</div>
+
+
+</center>
+</form>
+</form>
+</h2>
+
+</div>
+<br>
+<br>
+<br>
+
+<script type="text/javascript">
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+    function container(){
+   window.scrollTo(0,10);
+    }
+	function HOME(){
+   window.scrollTo(0,100);
+    }
+	function Contact(){
+   window.scrollTo(0,100);
+    }
+	
+	var subjectObject = {
+  "1": { }, "2": { },"3":{ },"4": { },"5": { }
+    				}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+ for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x,x,x,x,x);
+  }
+  subjectSel.onchange = function() {
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y,y,y,y,y);
+    }
+  }
+  
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<br>
+<br>
+<div>
+<marquee width="100%" direction="right" scrollamount="20" height="10%" color:"#8FBC8F">
+<img src="IMAGES/vehh.jpg" style="width:100%;height:100%;">
+</marquee>
+</div>
+  <br>
+  <br>
+
+   <a href="#" class="scrollup" style="float:right;" align="right";>U☝P</a>
+
+<br>
+
+<div id="aboutus" class="container-fluid">
+ <br><center>
+  <p id="ABOUT US"><i class="fa fa-car" style="font-size:40px; color: black;"> ABOUT US</i></p>
+  <br>
+  <div>
+<img src="IMAGES/a4.jpg" style="width:35%;height:15%;float:center;">
+
+    <p style="color:red;"> 
+Our SWAMINATHA TRAVELS, your trusted and safe journey</p>. 
+<p style="color:black;">SWAMINATHA Cars is also an online booking facilities for customer. 
+With 10+ years of experience exclusively in travel and tourism industry, 
+ we provide exemplary car rental services at affordable price.</p>
+ 
+ 	<img src="IMAGES/a6.jpg" style="width:50%;height:30%;float:center;">
+	<br>
+	<br>
+</center>
+</div>
+
+<br>
+<br>
+<div id="abc">
+ <br><center>
+  <br><br><br><br><br><br><br><br>
+  <div ><h3 style="text-align:center; font-family: Times New Roman; color:blue; font-size:30px;">
+  <br><br><br><br><br><br><b>SWAMINATHA TRAVELS</b></h3></div>
+  <p style="color:grey;"><em>HELLO!</em></p>
+  <p style="color:black; font-size:130%;">Our S2T, your trusted and safe journey.</p>
+  
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center" style="text-align:center; font-family: Times New Roman; color:black; font-size:30px;"><strong>Name: M. Nagarajan</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="IMAGES/s1.jpg" class=" person">
+      </a>
+      <div id="demo" class="collapse">
+        <p> </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center" style="text-align:center; font-family: Times New Roman; color:black; font-size:40px;"><strong>S2T</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="IMAGES/sss.jpg" class="img-circle person"  width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p> </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center" style="text-align:center; font-family: Times New Roman; color:black; font-size:30px;"><strong>Name: N. Arivalagan</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="IMAGES/s5.jpg" class=" person"  width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p> </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div style="text-align:right; float:right; font-size:20px;">
+ <b>Boss:)</b><span><a href="boss.html">CLICK ME</a></span>
+ </div>
+
+
+
+
+ <form action="feedback.html" method="post" >
+	   <button class="open-button" onclick="openForm()"><h1 style="color:yellow; font-family: Times New Roman;">FEEDBACK</h1></button>
+ </form>
+
+<br>
+
+<!-- Container (TOUR Section) -->
+<center>
+<div class="bg-1" id="abc">
+<div class="container">
+    <div >
+         <h3 id="abc">SWAMINATHA TRAVELS</h3>
+	</div>
+	
+<div>
+    <p id="abc" style="color:grey;" >Our <b>S2T</b> TRAVELS offers: <br> 24x7 free car rental in KUMBAKONAM..<br> Remember to BOOK your booking on online!</p>
+</div>
+</div>
+</div>
+</center>
+<br>
+
+
+<footer class="ccc" style="text-align:center; font:50%;">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="www.sriswaminathatravelss.com" target="_blank" class="w3-hover-text-green">SriSwaminathaTravels</a></p>
+</footer>
+ 
+ </body>
+</html>
+

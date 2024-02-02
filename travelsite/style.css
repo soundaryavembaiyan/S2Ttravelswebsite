@@ -1,0 +1,228 @@
+<style>
+
+body{ position: relative; background-color:rhino; background-color:white;}
+ 
+  #home {padding-top:40px;height:800px; color: red;background-color: white;}
+  #services {padding-top:40px;height:700px;color: red; background-color: white;}
+  #vehicle {padding-top:40px;height:1000px;color: black; background-color: white;}
+  #contact {padding-top:40px;height:980px;color: black; background-color:white;}
+  #aboutus {padding-top:40px;height:800px; color: red;background-color: white;}
+ 
+ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;}
+
+h1 p {color:black; text-shadow: 2px 2px 4px  #000000;}
+ 
+ body{position: relative; } 
+
+#HOME {border-radius: 15px; background:#424949; color:white; padding: 2px;  width: auto; height: 70px; text-align:center; text-size:100px}
+#HOME:hover {background: green; color:white; width: auto; height: 70px;}
+
+#SERVICES{border-radius: 15px; background:#424949; color:white; padding: 2px;  width: auto; height: 50px; text-align:center;}
+#SERVICES:hover {background: green; color:white; width: auto; height: 50px;}
+
+#VEHICLE{border-radius: 15px; background:#424949; color:white; padding: 2px;  width: auto; height: 50px; text-align:center;}
+#VEHICLE:hover {background: green; width: auto; color:white; height: 50px;}
+
+#CONTACT{border-radius: 15px; background:#424949; color:white; padding: 2px;  width: auto; height: 50px; text-align:center;}
+#CONTACT:hover {background: green; width: auto; color:white; height: 50px;}
+ 
+#BOOKINGS{border-radius: 15px; background:LightGray; padding: 2px;  width: auto; height: 50px; text-align:center;}
+#BOOKINGS:hover {background:#89CFEF; width: auto; height: 50px;}
+
+.container {display: inline-block; cursor: pointer;}
+
+.bar1, .bar2, .bar3 {width: 35px; height: 5px; background-color: #333; margin: 6px 0; transition: 0.4s;}
+
+.change .bar1 {-webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px);}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {-webkit-transform: rotate(45deg) translate(-8px, -8px); transform: rotate(45deg) translate(-8px, -8px);}
+
+#hedr:hover{background:grey; color:yellow;}
+
+body {font-family: Arial; font-size: 17px;}
+
+.container {position: relative; max-width: 500px; margin: 0 auto;}
+
+.container .content {position: absolute; background: rgb(0, 0, 0);  background: rgba(0, 0, 0, 0.5); color: #f1f1f1; width: 100%; padding: 20px;}
+
+.container div { color: black; float: top;}
+
+#soc::b{font-size: 180%; color: #000000;}
+
+
+img {display: block; margin-left: auto; margin-right: auto;}
+
+
+.spot{float: right;}
+
+.test{height:50px; width:80px;}
+
+.spot {
+        background-color: #1c87c9; -webkit-border-radius: 60px; border-radius: 60px; color: red; cursor: pointer; display: inline-block; font-family: sans-serif; font-size: 20px; padding: 10px 10px; text-align: center; text-decoration: none;}
+      @keyframes glowing {
+        0% {
+          background-color: black; box-shadow: 0 0 5px #2ba805;
+           }
+        50% {
+          background-color: silver; box-shadow: 0 0 20px #49e819;
+           }
+        100% {
+          background-color: black; box-shadow: 0 0 5px #2ba805;
+             }
+      }
+      .spot {
+        animation: glowing 1400ms infinite;
+		
+      }
+
+	 
+.container-fluid {border: 2px solid white;}
+	
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+   align:"center"}
+
+.input-container {display: -ms-flexbox; display: flex; width: 100%; margin-bottom: 15px;}
+
+.icon {padding: 20px; background: black; color: white; min-width: 70px; text-align: center; }
+
+.input-field {width: 100%; padding: 10px; outline: none;}
+
+.input-field:focus { border: 2px solid black;}
+
+.btn {background-color: black; color: white; padding: 15px 20px; border: none; cursor: pointer; width: 100%; opacity: 0.9;}
+
+.btn:hover { opacity: 1;}
+
+.w3-container{float: left;}	
+	
+/*IMAGESSSSSSS*/
+body {font-family: Arial; margin: 0; float: center-right;}
+
+* {box-sizing: border-box;}
+
+img {vertical-align: middle;}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container{position: relative;}
+
+/* Hide the images by default */
+.mySlides { display: none;}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {cursor: pointer;}
+
+/* Next & previous buttons */
+.prev, .next {cursor: pointer; position: absolute; top: 40%; width: auto; padding: 16px; margin-top: -50px;  color: white; font-weight: bold; font-size: 20px; border-radius: 0 3px 3px 0; user-select: none; -webkit-user-select: none;}
+
+/* Position the "next button" to the right */
+.next {right: 0; border-radius: 3px 0 0 3px;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.8);}
+
+/* Number text (1/3 etc) */
+.numbertext {color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+
+/* Container for image text */
+.caption-container {text-align: center; background-color: #222; padding: 2px 16px; color: white;}
+
+.row:after {content: ""; display: table; clear: both;}
+
+/* Six columns side by side */
+.column {float: left; width: 16.66%;}
+
+/* Add a transparency effect for thumnbail images */
+.demo {opacity: 0.6;}
+
+.active, .demo:hover {opacity: 1;}
+
+.numbertext{display: block; margin-left: auto; margin-right: auto;}
+
+body {margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+#home{font-family: "Times New Roman", Times, serif; font-size: 130%;}
+
+#services{font-family: "Times New Roman", Times, serif; font-size: 120%;}
+
+#vehicle{font-family: "Times New Roman", Times, serif; font-size: 100%;}
+
+#contact{font-family: "Times New Roman", Times, serif; font-size: 100%;}
+
+#ttt{font-family:Times; font-style: bold; font-weight:100%; font-feature-settings: "c2sc", "smcp";}
+ 
+.content{font-family: "Times New Roman", Times, serif; font-size:100%;}
+
+#bookings{font-family: "Times New Roman", Times, serif; font-size:100%;}
+
+#aboutus{font-family: "Times New Roman"; color:red; font-size: 120%;}
+
+
+#cen
+{ 
+width:100%;height:30%;float:center;
+}
+
+.form-container .cancel {
+  background-color: red;
+  height:50px; width:80px;
+}
+.open-button {
+  background-color: #19567c;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  /* opacity: 0.9; */
+  /* font-size: 20px; */
+  margin-top: 60px;
+  right: 28px;
+  width: auto;
+}
+
+#mmm{font-family:Times; font-style: bold; font-weight:100%; font-size:100%; font-feature-settings: "c2sc", "smcp";}
+
+.container {
+    padding: 80px 120px;
+  }
+  
+  .person {
+    border: 30px solid transparent;
+    margin-bottom: 25px;
+    width: 90%;
+    height: 90%;
+    opacity: 0.9;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  
+  #abc{font-family: "Times New Roman"; font-size: "200%";}
+  
+  .carlogo {
+    border: 20px solid transparent;
+    margin-bottom: 25px;
+    width: 30%;
+    height: 30%;
+    opacity: 0.9;
+  }
+  .carlogo:hover {
+    border-color: #f1f1f1;
+	
+
+</style>

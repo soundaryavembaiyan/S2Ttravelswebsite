@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text],input[type=password]  {
+  width: 25%;
+  height: 5%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: red;
+  color: white;
+  padding: 30px 20px;
+  margin: 8px 0;
+  border: auto;
+  cursor: pointer;
+  width: 10%;
+
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: green;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width:10%;
+  padding: 10px 18px;
+  background-color:tomato;
+
+}
+.cancelbtn:hover {
+  opacity: 10;
+  background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 90%; /* Full width */
+  height: 93%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 30%;
+  }
+}
+</style>
+</head>
+<body style="text-align:center;>
+<h1 style="text-align:center;">
+<b>...ST...</b></h1>
+
+ <h2 style="text-align:center;"><b>
+WELCOME TO LOGIN OUR SITE</b></h2>
+  </p>
+
+<div class="container">
+<picture width="10%"  height="2%">
+<img src="IMAGES/kumcarfront.jpg" >
+</picture>
+    <div>
+
+<button onclick="document.getElementById('id01').style.display='block'"
+ style="width:20%; color:black;"><b>Login</b></button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="logincar.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+</div>
+
+    <div class="container">
+<picture>
+<img src="IMAGES/carlog.jpg"  style="width:20%; height:20;" >
+</picture>
+    <div>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+	</div>
+	<div>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+     </div> 
+     <div>
+
+      <button type="submit" style="width:10%">Login</button>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div> </div>
+<br>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
