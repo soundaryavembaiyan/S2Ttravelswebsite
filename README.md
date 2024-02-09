@@ -1,2 +1,2 @@
 # Traveloldwebsite
-In this website was made of using HTML, CSS, JAVASCRIPTHiand PHP
+This website was made up of using HTML, CSS, JAVASCRIPT and PHP(XAMPP)
